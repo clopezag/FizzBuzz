@@ -84,4 +84,13 @@ public class FizzBuzzTest
 
         assertEquals("Fizz", result);
     }
+
+    @Test
+    public void shouldConvertToBuzzIfContainsFive()
+    {
+
+        String result = machine.translate(51);
+
+        assertEquals("Buzz", result);
+    }
 }
