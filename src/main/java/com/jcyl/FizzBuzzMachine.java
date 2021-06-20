@@ -7,7 +7,7 @@ public class FizzBuzzMachine {
   List <Converter> converters;
   
   public FizzBuzzMachine(){
-    converters = Arrays.asList(new FizzConverter(), new BuzzConverter(), new FizzBuzzConverter());
+    converters = Arrays.asList(new FizzConverter(), new BuzzConverter(), new FizzBuzzConverter(), new WhizzConverter());
     
   }
   public String translate(int value) {
