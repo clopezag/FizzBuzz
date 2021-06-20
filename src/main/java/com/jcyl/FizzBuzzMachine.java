@@ -26,10 +26,6 @@ public class FizzBuzzMachine {
    
     return result;
   }
-  
-  
-  private boolean meetBuzz(int value) {
-    return value % 5 == 0;
-  }
+
   
 }

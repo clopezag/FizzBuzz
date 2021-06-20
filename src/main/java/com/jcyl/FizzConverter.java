@@ -1,13 +1,13 @@
 package com.jcyl;
 
 public class FizzConverter implements Converter{
-  public final int VALUE_MATCH= 3;
+
   public boolean meetRule(int value) {
-    return value % VALUE_MATCH == 0 || String.valueOf(value).contains(String.valueOf(VALUE_MATCH));
+    return (value % FizzBuzzUtils.VALUE_MATCH_3 == 0 || String.valueOf(value).contains(String.valueOf(FizzBuzzUtils.VALUE_MATCH_3)));
   }
-  
+
   @Override
   public String convert() {
-    return "Fizz";
+    return FizzBuzzUtils.RETURN_STRING_FIZZ;
   }
 }

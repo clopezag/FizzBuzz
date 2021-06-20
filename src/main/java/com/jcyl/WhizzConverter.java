@@ -2,12 +2,12 @@ package com.jcyl;
 
 public class WhizzConverter implements Converter{
   public boolean meetRule(int value) {
-    
-    return value % 7 == 0;
+
+    return value % FizzBuzzUtils.VALUE_MATCH_7 == 0;
   }
-  
+
   @Override
   public String convert() {
-    return "Whizz";
+    return FizzBuzzUtils.RETURN_STRING_WHIZZ;
   }
 }
