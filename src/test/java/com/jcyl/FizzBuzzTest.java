@@ -75,4 +75,13 @@ public class FizzBuzzTest
     public void throwsExceptionWithZeroValue(){
         String result = machine.translate(0);
     }
+
+    @Test
+    public void shouldConvertToFizzIfContainsThree()
+    {
+
+        String result = machine.translate(113);
+
+        assertEquals("Fizz", result);
+    }
 }
